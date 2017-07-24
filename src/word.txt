@@ -1,0 +1,5 @@
+hello world
+hello scala
+hello python
+python simple
+nice word
