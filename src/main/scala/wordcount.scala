@@ -5,7 +5,7 @@ import org.apache.spark.{SparkContext, SparkConf}
 
 object wordcount {
   def main(args: Array[String]): Unit={
-    System.setProperty("hadoop.home.dir", "D:\\hadoop-2.6.5")
+    System.setProperty("hadoop.home.dir", "D:\\hadoop-2.7.3")
     val conf = new SparkConf().setAppName("WordCount").setMaster("local[2]")
     conf.set("spark.testing.memory", "2147480000")
     val sc = new SparkContext(conf)
