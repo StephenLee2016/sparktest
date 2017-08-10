@@ -16,7 +16,7 @@ object SparkKafka {
     val scc = new StreamingContext(conf, Duration(5000))
     scc.sparkContext.setLogLevel("ERROR")
     scc.checkpoint("C:\\Users\\jrlimingyang\\IdeaProjects\\sparktest\\src\\main\\scala\\checkpoint")   //因为用到了 updateStateByKey, 所以必须要设置checkpoint
-    val topics = Set("sex")  //我们需要消费的kafka数据的topic
+    val topics = Set("test")  //我们需要消费的kafka数据的topic
     val brokers = "10.9.45.10:9092"
     val kafkaParam = Map[String, String](
       // "zookeeper.connect" -> "192.168.21.181:2181",
