@@ -34,7 +34,6 @@ object SparkWord2Vec {
     val model = word2Vec.fit(documentDF)
 
     val result = model.transform(documentDF)
-
     result.select("result").take(3).foreach(println)
 
   }
